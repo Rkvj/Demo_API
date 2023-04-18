@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"63563fb5-61d8-4054-8537-16fb65fccbcc",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Test.oauth2</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>default</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-04-17 09:45:05 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>oauth 2 flow</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Test/oauth2.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">oauth 2 test using</span>
+          <span class="feature-description">http://brentertainment.com/oauth2</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">oauth 2 flow</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1751</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://brentertainment.com/oauth2/lockdin/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">21:45:03.892 env: default 
+21:45:03.893 baseURL: https://reqres.in/api 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field grant_type = &#39;password&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">284</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_id = &#39;demoapp&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_secret = &#39;demopass&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field username = &#39;demouser&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field password = &#39;testpass&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1418</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">21:45:05.098 request:
+1 &gt; POST http://brentertainment.com/oauth2/lockdin/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 96
+1 &gt; Host: brentertainment.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=password&amp;client_id=demoapp&amp;client_secret=demopass&amp;username=demouser&amp;password=testpass
+
+21:45:05.656 response time in milliseconds: 506
+1 &lt; 500
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Set-Cookie: PHPSESSID=695519ccc105aa295e3cba34110d9e33; path=/
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Cloud-Trace-Context: 4795dc418e7dad9e722f6de06c47aae4;o=1
+1 &lt; Date: Mon, 17 Apr 2023 16:15:05 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 10793
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+        &lt;style&gt;
+            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html */
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:&#39;&#39;;}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+            html { background: #eee; padding: 10px }
+            img { border: 0; }
+            #sf-resetcontent { width:970px; margin:0 auto; }
+                        .sf-reset { font: 11px Verdana, Arial, sans-serif; color: #333 }
+            .sf-reset .clear { clear:both; height:0; font-size:0; line-height:0; }
+            .sf-reset .clear_fix:after { display:block; height:0; clear:both; visibility:hidden; }
+            .sf-reset .clear_fix { display:inline-block; }
+            .sf-reset * html .clear_fix { height:1%; }
+            .sf-reset .clear_fix { display:block; }
+            .sf-reset, .sf-reset .block { margin: auto }
+            .sf-reset abbr { border-bottom: 1px dotted #000; cursor: help; }
+            .sf-reset p { font-size:14px; line-height:20px; color:#868686; padding-bottom:20px }
+            .sf-reset strong { font-weight:bold; }
+            .sf-reset a { color:#6c6159; cursor: default; }
+            .sf-reset a img { border:none; }
+            .sf-reset a:hover { text-decoration:underline; }
+            .sf-reset em { font-style:italic; }
+            .sf-reset h1, .sf-reset h2 { font: 20px Georgia, &quot;Times New Roman&quot;, Times, serif }
+            .sf-reset .exception_counter { background-color: #fff; color: #333; padding: 6px; float: left; margin-right: 10px; float: left; display: block; }
+            .sf-reset .exception_title { margin-left: 3em; margin-bottom: 0.7em; display: block; }
+            .sf-reset .exception_message { margin-left: 3em; display: block; }
+            .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
+            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+                -webkit-border-bottom-right-radius: 16px;
+                -webkit-border-bottom-left-radius: 16px;
+                -moz-border-radius-bottomright: 16px;
+                -moz-border-radius-bottomleft: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border-bottom:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                word-wrap: break-word;
+            }
+            .sf-reset .block_exception { background-color:#ddd; color: #333; padding:20px;
+                -webkit-border-top-left-radius: 16px;
+                -webkit-border-top-right-radius: 16px;
+                -moz-border-radius-topleft: 16px;
+                -moz-border-radius-topright: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-top:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .sf-reset a { background:none; color:#868686; text-decoration:none; }
+            .sf-reset a:hover { background:none; color:#313131; text-decoration:underline; }
+            .sf-reset ol { padding: 10px 0; }
+            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                    &lt;div id=&quot;sf-resetcontent&quot; class=&quot;sf-reset&quot;&gt;
+                &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                                        &lt;h2 class=&quot;block_exception clear_fix&quot;&gt;
+                            &lt;span class=&quot;exception_counter&quot;&gt;1/1&lt;/span&gt;
+                            &lt;span class=&quot;exception_title&quot;&gt;&lt;abbr title=&quot;PDOException&quot;&gt;PDOException&lt;/abbr&gt; in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;:&lt;/span&gt;
+                            &lt;span class=&quot;exception_message&quot;&gt;SQLSTATE[HY000]: General error: 8 attempt to write a readonly database&lt;/span&gt;
+                        &lt;/h2&gt;
+                        &lt;div class=&quot;block&quot;&gt;
+                            &lt;ol class=&quot;traces list_exception&quot;&gt;
+       &lt;li&gt; in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;PDOStatement&quot;&gt;PDOStatement&lt;/abbr&gt;-&gt;execute(&lt;em&gt;array&lt;/em&gt;(&#39;access_token&#39; =&gt; &#39;5897027747d1e2d2ed721159a79bb497dc84e448&#39;, &#39;client_id&#39; =&gt; &#39;demoapp&#39;, &#39;user_id&#39; =&gt; &#39;demouser&#39;, &#39;expires&#39; =&gt; &#39;2023-04-17 17:15:05&#39;, &#39;scope&#39; =&gt; &lt;em&gt;null&lt;/em&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Storage\Pdo&quot;&gt;Pdo&lt;/abbr&gt;-&gt;setAccessToken(&#39;5897027747d1e2d2ed721159a79bb497dc84e448&#39;, &#39;demoapp&#39;, &#39;demouser&#39;, &#39;2023-04-17 17:15:05&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/ResponseType/AccessToken.php line 84&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;AccessToken.php line 84&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\ResponseType\AccessToken&quot;&gt;AccessToken&lt;/abbr&gt;-&gt;createAccessToken(&#39;demoapp&#39;, &#39;demouser&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/GrantType/UserCredentials.php line 81&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;UserCredentials.php line 81&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\GrantType\UserCredentials&quot;&gt;UserCredentials&lt;/abbr&gt;-&gt;createAccessToken(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\ResponseType\AccessToken&quot;&gt;AccessToken&lt;/abbr&gt;), &#39;demoapp&#39;, &#39;demouser&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Controller/TokenController.php line 201&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;TokenController.php line 201&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Controller\TokenController&quot;&gt;TokenController&lt;/abbr&gt;-&gt;grantAccessToken(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Controller/TokenController.php line 49&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;TokenController.php line 49&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Controller\TokenController&quot;&gt;TokenController&lt;/abbr&gt;-&gt;handleTokenRequest(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Server.php line 259&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Server.php line 259&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Server&quot;&gt;Server&lt;/abbr&gt;-&gt;handleTokenRequest(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/src/OAuth2Demo/Server/Controllers/Token.php line 29&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Token.php line 29&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2Demo\Server\Controllers\Token&quot;&gt;Token&lt;/abbr&gt;-&gt;token(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;))&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;call_user_func_array(&lt;em&gt;array&lt;/em&gt;(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2Demo\Server\Controllers\Token&quot;&gt;Token&lt;/abbr&gt;), &#39;token&#39;), &lt;em&gt;array&lt;/em&gt;(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;))) in &lt;a title=&quot;/srv/oauth2/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpKernel.php line 145&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;HttpKernel.php line 145&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Symfony\Component\HttpKernel\HttpKernel&quot;&gt;HttpKernel&lt;/abbr&gt;-&gt;handleRaw(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &#39;1&#39;) in &lt;a title=&quot;/srv/oauth2/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpKernel.php line 66&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;HttpKernel.php line 66&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Symfony\Component\HttpKernel\HttpKernel&quot;&gt;HttpKernel&lt;/abbr&gt;-&gt;handle(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &#39;1&#39;, &lt;em&gt;true&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/silex/silex/src/Silex/Application.php line 547&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Application.php line 547&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;-&gt;handle(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/silex/silex/src/Silex/Application.php line 524&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Application.php line 524&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;-&gt;run(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/web/index.php line 24&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;index.php line 24&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;require(&#39;/srv/oauth2/web/index.php&#39;) in &lt;a title=&quot;/srv/gae-app.php line 57&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;gae-app.php line 57&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+
+            &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">42</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">21:45:05.740 classpath:Test/oauth2.feature:15
+* status 200
+status code was: 500, expected: 200, response time in milliseconds: 506, url: http://brentertainment.com/oauth2/lockdin/token, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+        &lt;style&gt;
+            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html */
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:&#39;&#39;;}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+            html { background: #eee; padding: 10px }
+            img { border: 0; }
+            #sf-resetcontent { width:970px; margin:0 auto; }
+                        .sf-reset { font: 11px Verdana, Arial, sans-serif; color: #333 }
+            .sf-reset .clear { clear:both; height:0; font-size:0; line-height:0; }
+            .sf-reset .clear_fix:after { display:block; height:0; clear:both; visibility:hidden; }
+            .sf-reset .clear_fix { display:inline-block; }
+            .sf-reset * html .clear_fix { height:1%; }
+            .sf-reset .clear_fix { display:block; }
+            .sf-reset, .sf-reset .block { margin: auto }
+            .sf-reset abbr { border-bottom: 1px dotted #000; cursor: help; }
+            .sf-reset p { font-size:14px; line-height:20px; color:#868686; padding-bottom:20px }
+            .sf-reset strong { font-weight:bold; }
+            .sf-reset a { color:#6c6159; cursor: default; }
+            .sf-reset a img { border:none; }
+            .sf-reset a:hover { text-decoration:underline; }
+            .sf-reset em { font-style:italic; }
+            .sf-reset h1, .sf-reset h2 { font: 20px Georgia, &quot;Times New Roman&quot;, Times, serif }
+            .sf-reset .exception_counter { background-color: #fff; color: #333; padding: 6px; float: left; margin-right: 10px; float: left; display: block; }
+            .sf-reset .exception_title { margin-left: 3em; margin-bottom: 0.7em; display: block; }
+            .sf-reset .exception_message { margin-left: 3em; display: block; }
+            .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
+            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+                -webkit-border-bottom-right-radius: 16px;
+                -webkit-border-bottom-left-radius: 16px;
+                -moz-border-radius-bottomright: 16px;
+                -moz-border-radius-bottomleft: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border-bottom:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                word-wrap: break-word;
+            }
+            .sf-reset .block_exception { background-color:#ddd; color: #333; padding:20px;
+                -webkit-border-top-left-radius: 16px;
+                -webkit-border-top-right-radius: 16px;
+                -moz-border-radius-topleft: 16px;
+                -moz-border-radius-topright: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-top:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .sf-reset a { background:none; color:#868686; text-decoration:none; }
+            .sf-reset a:hover { background:none; color:#313131; text-decoration:underline; }
+            .sf-reset ol { padding: 10px 0; }
+            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                    &lt;div id=&quot;sf-resetcontent&quot; class=&quot;sf-reset&quot;&gt;
+                &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                                        &lt;h2 class=&quot;block_exception clear_fix&quot;&gt;
+                            &lt;span class=&quot;exception_counter&quot;&gt;1/1&lt;/span&gt;
+                            &lt;span class=&quot;exception_title&quot;&gt;&lt;abbr title=&quot;PDOException&quot;&gt;PDOException&lt;/abbr&gt; in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;:&lt;/span&gt;
+                            &lt;span class=&quot;exception_message&quot;&gt;SQLSTATE[HY000]: General error: 8 attempt to write a readonly database&lt;/span&gt;
+                        &lt;/h2&gt;
+                        &lt;div class=&quot;block&quot;&gt;
+                            &lt;ol class=&quot;traces list_exception&quot;&gt;
+       &lt;li&gt; in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;PDOStatement&quot;&gt;PDOStatement&lt;/abbr&gt;-&gt;execute(&lt;em&gt;array&lt;/em&gt;(&#39;access_token&#39; =&gt; &#39;5897027747d1e2d2ed721159a79bb497dc84e448&#39;, &#39;client_id&#39; =&gt; &#39;demoapp&#39;, &#39;user_id&#39; =&gt; &#39;demouser&#39;, &#39;expires&#39; =&gt; &#39;2023-04-17 17:15:05&#39;, &#39;scope&#39; =&gt; &lt;em&gt;null&lt;/em&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Storage/Pdo.php line 156&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Pdo.php line 156&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Storage\Pdo&quot;&gt;Pdo&lt;/abbr&gt;-&gt;setAccessToken(&#39;5897027747d1e2d2ed721159a79bb497dc84e448&#39;, &#39;demoapp&#39;, &#39;demouser&#39;, &#39;2023-04-17 17:15:05&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/ResponseType/AccessToken.php line 84&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;AccessToken.php line 84&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\ResponseType\AccessToken&quot;&gt;AccessToken&lt;/abbr&gt;-&gt;createAccessToken(&#39;demoapp&#39;, &#39;demouser&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/GrantType/UserCredentials.php line 81&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;UserCredentials.php line 81&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\GrantType\UserCredentials&quot;&gt;UserCredentials&lt;/abbr&gt;-&gt;createAccessToken(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\ResponseType\AccessToken&quot;&gt;AccessToken&lt;/abbr&gt;), &#39;demoapp&#39;, &#39;demouser&#39;, &lt;em&gt;null&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Controller/TokenController.php line 201&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;TokenController.php line 201&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Controller\TokenController&quot;&gt;TokenController&lt;/abbr&gt;-&gt;grantAccessToken(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Controller/TokenController.php line 49&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;TokenController.php line 49&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Controller\TokenController&quot;&gt;TokenController&lt;/abbr&gt;-&gt;handleTokenRequest(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/bshaffer/oauth2-server-php/src/OAuth2/Server.php line 259&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Server.php line 259&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2\Server&quot;&gt;Server&lt;/abbr&gt;-&gt;handleTokenRequest(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Response&quot;&gt;Response&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/src/OAuth2Demo/Server/Controllers/Token.php line 29&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Token.php line 29&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;OAuth2Demo\Server\Controllers\Token&quot;&gt;Token&lt;/abbr&gt;-&gt;token(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;))&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;call_user_func_array(&lt;em&gt;array&lt;/em&gt;(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2Demo\Server\Controllers\Token&quot;&gt;Token&lt;/abbr&gt;), &#39;token&#39;), &lt;em&gt;array&lt;/em&gt;(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;))) in &lt;a title=&quot;/srv/oauth2/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpKernel.php line 145&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;HttpKernel.php line 145&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Symfony\Component\HttpKernel\HttpKernel&quot;&gt;HttpKernel&lt;/abbr&gt;-&gt;handleRaw(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &#39;1&#39;) in &lt;a title=&quot;/srv/oauth2/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/HttpKernel.php line 66&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;HttpKernel.php line 66&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Symfony\Component\HttpKernel\HttpKernel&quot;&gt;HttpKernel&lt;/abbr&gt;-&gt;handle(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;), &#39;1&#39;, &lt;em&gt;true&lt;/em&gt;) in &lt;a title=&quot;/srv/oauth2/vendor/silex/silex/src/Silex/Application.php line 547&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Application.php line 547&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;-&gt;handle(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/vendor/silex/silex/src/Silex/Application.php line 524&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;Application.php line 524&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;Silex\Application&quot;&gt;Application&lt;/abbr&gt;-&gt;run(&lt;em&gt;object&lt;/em&gt;(&lt;abbr title=&quot;OAuth2\HttpFoundationBridge\Request&quot;&gt;Request&lt;/abbr&gt;)) in &lt;a title=&quot;/srv/oauth2/web/index.php line 24&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;index.php line 24&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;at &lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;require(&#39;/srv/oauth2/web/index.php&#39;) in &lt;a title=&quot;/srv/gae-app.php line 57&quot; ondblclick=&quot;var f=this.innerHTML;this.innerHTML=this.title;this.title=f;&quot;&gt;gae-app.php line 57&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+
+            &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+classpath:Test/oauth2.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>path &#39;resource&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * param access_token = accessToken</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

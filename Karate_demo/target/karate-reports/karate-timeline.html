@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"Test\/SignUp[1:9]","start":1681813944059,"end":1681813949247,"title":"Test\/SignUp[1:9] 16:02:24.059-16:02:29.247 New user Sign Up"},{"id":2,"group":1,"content":"Test\/SignUp[2.1:55]","start":1681813949329,"end":1681813951023,"title":"Test\/SignUp[2.1:55] 16:02:29.329-16:02:31.023 Validate Sign Up error messages"},{"id":3,"group":1,"content":"Test\/SignUp[2.2:56]","start":1681813951045,"end":1681813952380,"title":"Test\/SignUp[2.2:56] 16:02:31.045-16:02:32.380 Validate Sign Up error messages"},{"id":4,"group":1,"content":"Test\/SignUp[2.3:57]","start":1681813952401,"end":1681813954157,"title":"Test\/SignUp[2.3:57] 16:02:32.401-16:02:34.157 Validate Sign Up error messages"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
